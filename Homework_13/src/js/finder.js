@@ -33,7 +33,7 @@ function loadMoreHandler() {
   gallery
     .fetchImages()
     .then(insertGalleryItems)
-    .then(debounce(windowScrollDown, 1000));
+    .then(debounce(windowScrollDown, 300));
 }
 
 function clearGalleryList() {
